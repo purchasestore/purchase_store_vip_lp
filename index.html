@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP Store Access</title>
+    <title>Acesso à Loja VIP</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,29 +53,34 @@
             background-color: #FFF700;
         }
         .logo {
-            font-size: 32px;
             margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 200px;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">🌟P</div>
+        <div class="logo">
+            <img src="https://dcdn.mitiendanube.com/stores/005/129/175/themes/common/logo-1184189757-1724508865-6e5fb413e2465d7715f061432fdee80a1724508865-480-0.webp" alt="Logo da Loja VIP">
+        </div>
         <h2>PURCHASE STORE VIP</h2>
-        <input type="password" id="passwordInput" placeholder="Enter VIP password">
-        <button onclick="checkPassword()">Access Exclusive Offers</button>
+        <input type="password" id="passwordInput" placeholder="Digite a senha VIP">
+        <button onclick="checkPassword()">Acessar Ofertas Exclusivas</button>
     </div>
 
     <script>
         function checkPassword() {
             const password = document.getElementById('passwordInput').value;
-            const correctPassword = 'purchasevip'; // Replace with your desired password
-            const redirectUrl = 'https://purchasestorevip.lojavirtualnuvem.com.br/?exit_preview_theme_installation'; // Replace with your VIP store URL
+            const correctPassword = 'purchasevip'; // Substitua pela senha desejada
+            const redirectUrl = 'https://purchasestorevip.lojavirtualnuvem.com.br/?exit_preview_theme_installation'; // Substitua pelo URL da sua loja VIP
 
             if (password === correctPassword) {
                 window.location.href = redirectUrl;
             } else {
-                alert('Incorrect password. Please try again or contact customer support.');
+                alert('Senha incorreta. Por favor, tente novamente ou entre em contato com o suporte ao cliente.');
             }
         }
     </script>
