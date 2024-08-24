@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Store Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+            background-image: radial-gradient(#333333 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            text-align: center;
+            color: #FFD700;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin: 15px 0;
+            padding: 12px;
+            box-sizing: border-box;
+            background-color: #1a1a1a;
+            border: 1px solid #FFD700;
+            color: #FFD700;
+        }
+        input::placeholder {
+            color: #998100;
+        }
+        button {
+            background-color: #FFD700;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #FFF700;
+        }
+        .logo {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🌟P</div>
+        <h2>PURCHASE STORE VIP</h2>
+        <input type="password" id="passwordInput" placeholder="Enter VIP password">
+        <button onclick="checkPassword()">Access Exclusive Offers</button>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            const correctPassword = 'purchasevip'; // Replace with your desired password
+            const redirectUrl = 'https://purchasestorevip.lojavirtualnuvem.com.br/?exit_preview_theme_installation'; // Replace with your VIP store URL
+
+            if (password === correctPassword) {
+                window.location.href = redirectUrl;
+            } else {
+                alert('Incorrect password. Please try again or contact customer support.');
+            }
+        }
+    </script>
+</body>
+</html>
